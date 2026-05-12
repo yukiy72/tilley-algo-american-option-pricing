@@ -4,7 +4,7 @@ The content of this notebook is based on a paper "Valuing American Options in a 
 
 ## Overview
 
-This project implements a Monte Carlo simulation for pricing an American call option under the Geometric Brownian Motion (GBM) model.
+This project implements a Monte Carlo simulation for pricing an American put option under the Geometric Brownian Motion (GBM) model.
 
 ---
 
@@ -24,8 +24,8 @@ where:
 
 ## Option Type
 
-- American Call Option
-- Payoff: max(S(T) - K, 0)
+- American put option
+- Payoff: max(K - S(t), 0)
 - Maturity: T = 1
 - Discretized exercise dates: \{0.1, 0.2, ..., 1\}.
 
@@ -43,7 +43,7 @@ where:
 ## Features
 
 - GBM-based stock price simulation
-- American call option pricing
+- American put option pricing
 
 ---
 
